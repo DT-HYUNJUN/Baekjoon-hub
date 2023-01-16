@@ -7,9 +7,9 @@ for i in range(M, N+1):
     if i > 1:
         for j in range(2, i):
             if i % j == 0:
-                status += 1
+                status = 1
         if status == 0:
-            prime.append(i)
+            prime.append(i)        
 if sum(prime) > 0:
     print(sum(prime))
     print(min(prime))
