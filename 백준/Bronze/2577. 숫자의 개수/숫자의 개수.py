@@ -1,6 +1,3 @@
-A = int(input())
-B = int(input())
-C = int(input())
-lst = list(str(A*B*C))
+num = str(int(input()) * int(input()) * int(input()))
 for i in range(10):
-    print(lst.count(str(i)))
+    print(num.count(str(i)))
