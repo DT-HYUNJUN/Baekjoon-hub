@@ -1,7 +1,7 @@
 N = int(input())
-gold = ('4', '7')
+gold = set('47')
 for i in range(N,1,-1):
     num_set = set(str(i))
-    if num_set.intersection(gold) == num_set:
+    if num_set & gold == num_set:
         print(i)
         break
