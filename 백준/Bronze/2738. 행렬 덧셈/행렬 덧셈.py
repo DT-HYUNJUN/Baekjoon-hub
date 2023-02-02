@@ -1,3 +1,5 @@
+import sys
+input = sys.stdin.readline
 N, M = map(int, input().split())
 A = [[int(x) for x in input().split()] for _ in range(N)]
 B = [[int(x) for x in input().split()] for _ in range(N)]
