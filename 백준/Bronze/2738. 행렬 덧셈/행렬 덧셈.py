@@ -4,6 +4,5 @@ matrix_B = [[int(x) for x in input().split()] for _ in range(N)]
 res = [[0]*M for _ in range(N)]
 for i in range(N):
     for j in range(M):
-        res[i][j] = matrix_A[i][j] + matrix_B[i][j]
-for i in res:
-    print(*i)
+        print(matrix_A[i][j] + matrix_B[i][j], end=' ')
+    print()
