@@ -1,1 +1,2 @@
-print(*sorted([x for x in input()], reverse=True), sep='')
+import sys
+print(*sorted([x for x in sys.stdin.readline()], reverse=True), sep='')
