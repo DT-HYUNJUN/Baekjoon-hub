@@ -19,6 +19,6 @@ for c in name:
     dic[c] = dic.get(c, 0) + 1
 if check():
     for k, v in dic.items():
-        left += (k * (v//2))
+        left += (k * (int(v/2)))
     right = left[::-1]
     print(left + mid + right)
