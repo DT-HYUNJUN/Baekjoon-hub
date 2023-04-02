@@ -16,7 +16,6 @@ def check_first(PW):
 
 def check_second(PW):
     for c in range(len(PW)-2):
-        # 수정해야함 c, c+1, c+2 가 모두 자음인지 모음인지 구별해야함
         if PW[c] in vowel and PW[c+1] in vowel and PW[c+2] in vowel:
             return False
         elif PW[c] not in vowel and PW[c+1] not in vowel and PW[c+2] not in vowel:
