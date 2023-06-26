@@ -3,9 +3,9 @@ from collections import deque
 def solution(prices):
     answer = []
     prices = deque(prices)
-    while prices:
-        tmp = 0
+    for _ in range(len(prices)):
         price = prices.popleft()
+        tmp = 0
         
         for i in prices:
             tmp += 1
